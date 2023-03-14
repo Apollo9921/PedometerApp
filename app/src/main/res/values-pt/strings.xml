@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PedometerApp</string>
+    <string name="appAuthorization">Esta aplicação precisa que aceitas esta permissão</string>
+    <string name="acceptPermission">Aceitar permissão</string>
+    <string name="counterSteps">%1$s passos</string>
+    <string name="counterCalories">%1$s calorias</string>
+    <string name="totalSteps">Total de Passos: %1$s</string>
+    <string name="totalCalories">Total de Calorias: %1$s</string>
+    <string name="maxSteps">Recorde: %1$s</string>
+    <string name="maxCalories">Recorde: %1$s</string>
+    <string name="stepsHistoric">Passos: %1$s</string>
+    <string name="caloriesHistoric">Calorias queimadas: %1$s</string>
+    <string name="emptyHistoric">Ainda não tem passos guardados</string>
+    <string name="noSensorExists">O seu dispositivo não contêm os sensores que são necessários</string>
+    <string name="counter">Contar</string>
+    <string name="historic">Histórico</string>
+</resources>

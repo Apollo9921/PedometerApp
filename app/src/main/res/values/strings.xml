@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PedometerApp</string>
+    <string name="appAuthorization">This app needs you to authorize this permission</string>
+    <string name="acceptPermission">Accept Permission</string>
+    <string name="counterSteps">%1$s steps</string>
+    <string name="counterCalories">%1$s calories</string>
+    <string name="totalSteps">Total Steps: %1$s</string>
+    <string name="totalCalories">Total Calories: %1$s</string>
+    <string name="maxSteps">Record: %1$s</string>
+    <string name="maxCalories">Record: %1$s</string>
+    <string name="stepsHistoric">Steps: %1$s</string>
+    <string name="caloriesHistoric">Calories burned: %1$s</string>
+    <string name="emptyHistoric">No steps yet saved</string>
+    <string name="noSensorExists">Your device does not support the sensors that are needed</string>
+    <string name="counter">Counter</string>
+    <string name="historic">Historic</string>
+</resources>
