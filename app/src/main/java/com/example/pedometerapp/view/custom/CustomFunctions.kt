@@ -134,7 +134,7 @@ fun RequestPermission() {
 }
 
 fun formatTotalCount(count: Float): String {
-    if (count < 1000) return "" + count
+    if (count < 1000) return "%.2f".format(count)
     val exp = (ln(count.toDouble()) / ln(1000.0)).toInt()
     return String.format(
         "%.1f %c",
