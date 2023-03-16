@@ -51,16 +51,17 @@ fun CounterSteps() {
         calories.value = stepsManager.caloriesFlow.first().toFloat()
         dateSaved = stepsManager.dateFlow.first().toString()
     }
-    if (counterSteps.value >= 1) {
-        val steps = Steps(date.toString(), counterSteps.value, calories.value)
-        counterStepsViewModel.insertFirstStepOfDay(steps)
-    }
     if (dateSaved.isNotBlank() && dateSaved != date.toString()) {
         val stepsUpdate = Steps(dateSaved, counterSteps.value, calories.value)
         counterStepsViewModel.updateStepOfDay(stepsUpdate)
         counterSteps.value = 0
         calories.value = 0f
         dateSaved = ""
+        runBlocking { stepsManager.dataStore.edit { it.clear() } }
+    }
+    if (counterSteps.value >= 1) {
+        val steps = Steps(date.toString(), counterSteps.value, calories.value)
+        counterStepsViewModel.insertFirstStepOfDay(steps)
     }
     Box(
         modifier = Modifier
