@@ -1,5 +1,5 @@
 # PedometerApp
-PedometerApp using Room Database with MVVM architecture
+PedometerApp using Room Database with MVVM architecture and Jetpack Compose for the UI
 
 1 - In Counter screen, is where the application is going to count every step from the user using STEP_DETECTOR or ACCELEROMETER depending on each device.
 It is required that the device supports one of these two sensors, otherwise it will not count the steps.
