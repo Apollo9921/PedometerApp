@@ -169,7 +169,7 @@ private fun loadHistoricSteps() {
         .observe(owner) { result ->
             if (result.isNotEmpty()) {
                 if (result.size > historic.size) {
-                    for (i in result.indices) {
+                    for (i in 0 until result.size) {
                         historic.add(result[i])
                         totalSteps.value += result[i].steps
                         totalCalories.value += result[i].calories
